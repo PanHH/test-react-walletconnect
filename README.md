@@ -70,11 +70,37 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
+
 ### trouble shotting
 
 #### Q1 Uncaught (in promise) ReferenceError: Buffer is not defined
 Answer: Add the below code into `index.js`:
 ```
 window.Buffer = window.Buffer || require("buffer").Buffer;
+```
+
+### publish release
+(1) install gh-pages
+```
+npm install gh-pages
+```
+
+(2) update `package.json`, add or update "homepage" and "scripts" like below:
+```
+{
+  "name": "test-react-walletconnect",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://panhh.github.io/test-react-walletconnect/",
+  ....
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    ....
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  ....
+}
 ```
 
