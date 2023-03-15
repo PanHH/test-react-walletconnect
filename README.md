@@ -73,6 +73,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### trouble shotting
 
 #### Q1 Uncaught (in promise) ReferenceError: Buffer is not defined
-Answer: Add the below code into 'index.js':
-'window.Buffer = window.Buffer || require("buffer").Buffer;'
+Answer: Add the below code into `index.js`:
+```
+window.Buffer = window.Buffer || require("buffer").Buffer;
+```
 
