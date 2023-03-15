@@ -79,6 +79,10 @@ Answer: Add the below code into `index.js`:
 window.Buffer = window.Buffer || require("buffer").Buffer;
 ```
 
+#### Q2 fatal: A branch named `gh-pages` already exists.
+Answer: Delete `gh-pages` from `node_modules/.cache/gh-pages` then run  `npm run deploy`
+
+
 ### publish release
 (1) install gh-pages
 ```
