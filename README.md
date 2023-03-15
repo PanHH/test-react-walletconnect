@@ -108,3 +108,7 @@ npm install gh-pages
 }
 ```
 
+(1) deploy, run the below command:
+```
+npm run deploy
+```
