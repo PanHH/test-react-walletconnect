@@ -22,6 +22,23 @@ const INITIAL_STATE = {
 
 class App extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      connector: null,
+      fetching: false,
+      connected: false,
+      chainId: 1,
+      showModal: false,
+      pendingRequest: false,
+      uri: "",
+      accounts: [],
+      address: "",
+      result: null,
+      assets: [],
+    }
+  }
+
   connect = async () => {
       // bridge url
       const bridge = "https://bridge.walletconnect.org";
@@ -145,12 +162,18 @@ class App extends React.Component {
   };
 
   render() {
+    const { address, chainId } = this.state;
     return (
       <div className="App">
           <header className="App-header">
               <img src={logo} className="App-logo" alt="logo" />
-              <h1>Test React APP Wallet Connct</h1>
+              <h3>Test React APP Wallet Connct</h3>
               <br />
+              <div>
+                <label>Address:{address}</label>
+                <br/>
+                <label>ChainId:{chainId}</label>
+              </div>
               <button className="App-button" onClick={() => this.connect()}>Connect to WalletConnect</button>
               <button className="App-button" onClick={() => this.disconnect()}>Disconnect</button>
           </header>
