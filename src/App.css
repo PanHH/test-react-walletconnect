@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.App-button {
+  border-radius: 8px;
+  font-size: 20sp;
+  height: 44px;
+  width: 100%;
+  margin: 12px 0;
+}
+

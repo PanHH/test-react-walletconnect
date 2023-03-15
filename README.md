@@ -68,3 +68,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### trouble shotting
+
+#### Q1 Uncaught (in promise) ReferenceError: Buffer is not defined
+Answer: Add the below code into 'index.js':
+'window.Buffer = window.Buffer || require("buffer").Buffer;'
+
