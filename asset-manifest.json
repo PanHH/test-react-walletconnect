@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/test-react-walletconnect/static/css/main.4981901c.css",
+    "main.js": "/test-react-walletconnect/static/js/main.a931f4f9.js",
+    "static/js/787.c8431571.chunk.js": "/test-react-walletconnect/static/js/787.c8431571.chunk.js",
+    "static/media/logo.svg": "/test-react-walletconnect/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/test-react-walletconnect/index.html",
+    "main.4981901c.css.map": "/test-react-walletconnect/static/css/main.4981901c.css.map",
+    "main.a931f4f9.js.map": "/test-react-walletconnect/static/js/main.a931f4f9.js.map",
+    "787.c8431571.chunk.js.map": "/test-react-walletconnect/static/js/787.c8431571.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4981901c.css",
+    "static/js/main.a931f4f9.js"
+  ]
+}
