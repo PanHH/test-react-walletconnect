@@ -108,7 +108,31 @@ npm install gh-pages
 }
 ```
 
-(1) deploy, run the below command:
+(3) deploy, run the below command:
 ```
 npm run deploy
 ```
+
+### Debug - vConsole
+(1) install vconsole (using npm (Recommended))
+```
+npm install vconsole
+```
+
+(2) using vconsole
+```
+import VConsole from 'vconsole';
+
+const vConsole = new VConsole();
+// or init with options
+const vConsole = new VConsole({ theme: 'dark' });
+
+// call `console` methods as usual
+console.log('Hello world');
+
+// remove it when you finish debugging
+vConsole.destroy();
+```
+
+
+
