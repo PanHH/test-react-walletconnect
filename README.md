@@ -70,20 +70,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
+## Trouble Shotting
 
-### trouble shotting
-
-#### Q1 Uncaught (in promise) ReferenceError: Buffer is not defined
+### Q1 Uncaught (in promise) ReferenceError: Buffer is not defined
 Answer: Add the below code into `index.js`:
 ```
 window.Buffer = window.Buffer || require("buffer").Buffer;
 ```
 
-#### Q2 fatal: A branch named `gh-pages` already exists.
+### Q2 fatal: A branch named `gh-pages` already exists.
 Answer: Delete `gh-pages` from `node_modules/.cache/gh-pages` then run  `npm run deploy`
 
 
-### publish release
+## Publish Release
 (1) install gh-pages
 ```
 npm install gh-pages
@@ -113,7 +112,7 @@ npm install gh-pages
 npm run deploy
 ```
 
-### Debug - vConsole
+## Debug - vConsole
 (1) install vconsole (using npm (Recommended))
 ```
 npm install vconsole
